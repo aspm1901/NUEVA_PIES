@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bethany's Pie Shop</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: bisque;
+        background-image: url("images/pattern.png");
+        color: #333;
+      }
+
+      header {
+        background-color: #a593c2;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header img {
+        height: 60px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 15px;
+      }
+
+      nav ul li {
+        display: inline-block;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+        transition: background-color 0.3s, border-color 0.3s;
+      }
+
+      nav ul li a:hover {
+        background-color: white;
+        color: #6a47a4;
+        border-color: #6a47a4;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .hero {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        color: #6a47a4;
+      }
+
+      .history {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .history img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+      }
+
+      .history .text {
+        max-width: 600px;
+        text-align: left;
+        font-size: 1rem;
+      }
+
+      .logo-section {
+        text-align: center;
+        margin: 30px 0;
+      }
+
+      .logo-section img {
+        width: 150px;
+      }
+
+      .pies {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .pies h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .pie-buttons {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        justify-items: center;
+      }
+
+      .pie-buttons button {
+        background-color: #e78c29;
+        border: none;
+        color: white;
+        padding: 15px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .pie-buttons button:hover {
+        background-color: #d47317;
+      }
+
+      footer {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+      }
+
+      @media (min-width: 768px) {
+        .hero h1 {
+          font-size: 3rem;
+        }
+
+        .history {
+          flex-direction: row;
+        }
+
+        .history img,
+        .history .text {
+          max-width: 50%;
+        }
+
+        .pies h2 {
+          font-size: 2.5rem;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .hero h1 {
+          font-size: 3.5rem;
+        }
+
+        .pies h2 {
+          font-size: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="favicon.png" alt="Bethany's Pie Shop Logo" />
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">All Pies</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Welcome to Bethany's Pie Shop</h1>
+      </section>
+
+      <section class="history">
+        <img src="images/bethany-fullsize.jpg" alt="Bethany in her Pie Shop" />
+        <div class="text">
+          <h2>History</h2>
+          <p>
+            At Bethany's Pie Store, we're more than just a bakery, we're a slice
+            of tradition and passion. Founded by Bethany Williams, our story
+            began in a cozy kitchen with a family recipe book and a dream. After
+            years of perfecting her pie recipes, Bethany decided to share her
+            love for baking with the community. Our store has grown from a
+            humble start to a beloved local gem, known for its warm atmosphere
+            and irresistible pies. Each pie is handcrafted with the freshest,
+            locally-sourced ingredients, reflecting Bethany's dedication to
+            quality and flavor. From the classic apple pie that started it all
+            to new, inventive seasonal flavors, we strive to make every visit a
+            delightful experience. Join us at Bethany's Pie Store, where every
+            pie tells a story and every bite feels like home. We can't wait to
+            share our passion for pies with you!
+          </p>
+        </div>
+      </section>
+
+      <section class="logo-section">
+        <img src="images/bethanylogo.png" alt="Bethany's Pie Shop Logo" />
+      </section>
+      <section class="pies">
+        <h2>Browse our pies</h2>
+        <div class="pie-buttons">
+          <button>All pies</button>
+          <button>Cheese pies</button>
+          <button>Fruit pies</button>
+          <button>Promotions</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Our address is: Madre de Dios 371 - La Molina<br />
+        Our phone number is: +51 960172519<br />
+        2024 Fundamentos de diseño web - All Rights reserved
+      </p>
+    </footer>
+  </body>
+</html>
